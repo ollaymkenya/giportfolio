@@ -1,0 +1,8 @@
+.blogs-page{
+    text-align: center;
+    color: var(--beautyGrey);
+}
+
+.blogs-page span ion-icon{
+    font-size: 20px;
+}

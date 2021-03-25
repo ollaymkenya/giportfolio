@@ -1,0 +1,90 @@
+#topnav{
+    display: grid;
+    grid-template-columns: 1fr 5.5fr 5.5fr;
+    padding: 32px 16px 8px 16px;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60%;
+    min-width: 60px;
+}
+
+/* searchbar */
+.searchbar {
+    position: relative;
+    border: var(--mediumBorder);
+    justify-content: space-between;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    transition: box-shadow .2s ease;
+}
+
+
+.searchbar input {
+    position: absolute;
+    border: none;
+    margin: 0.1rem .5rem;
+    outline: none;
+    width: 90%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.searchbar-icon {
+    width: 15%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0.1rem 0.5rem 0.1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchbar-icon ion-icon {
+    font-size: 16px;
+    padding: 0 4px;
+    color: #80868B;
+    cursor: pointer;
+    --ionicon-stroke-width: 40px;
+}
+
+.searchbar-icon ion-icon:first-child {
+    border-right: var(--largeBorder);
+}
+
+.searchbar-icon ion-icon:last-child {
+    color: #4285F4;
+}
+
+/* extras */
+.extras-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.extras-icon ion-icon{
+    color: #5F6368;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0 .5rem;
+}
+
+.extras img {
+    width: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+}

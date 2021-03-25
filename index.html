@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Potfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- pages styles -->
+    <link rel="stylesheet" href="./pages/home/home.css" />
+    <link rel="stylesheet" href="./pages/images/images.css">
+    <link rel="stylesheet" href="./pages/blogs/blogs.css">
+    <link rel="stylesheet" href="./pages/about/about.css">
+    <!-- componentsstyles -->
+    <link rel="stylesheet" href="./components/topnav/topnav.css" />
+    <link rel="stylesheet" href="./components/bottomnav/bottomnav.css" />
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div id="topnav"></div>
+        <div id="bottomnav"></div>
+        <div id="page" class="page">
+            <div class="empty"></div>
+            <div id="contentSummary"></div>
+        </div>
+    </div>
+    <div class="tool-section">
+        <span>No tools/settings for now</span>
+    </div>
+    <div id="footer"></div>
+</body>
+
+<!-- ---------------------------------------------------------------------------pages------------------------------------------------------------------------- -->
+<!-- home -->
+<template id="homePage">
+    <div id="content">
+        <div class="result-time">
+            <span class="beauty-grey">About 20 results (few seconds)</span>
+        </div>
+        <div class="result">
+            <span class="result-site">www.mywork.com</span>
+            <h1 class="result-title"><a href="" class="page-link site-blue" data-value="Home">Home</a></h1>
+            <p class="result-content">
+                Welcome to my <strong>portfolio</strong>. It is <strong>Google inspired</strong> and gives you almost the same
+                feel. I thought It would be fun make a "Google clone" and see what would come of it. I like it so far. <strong>More to come
+                    though</strong>.You can view the different pages below...
+            </p>
+            <div class="sub-result">
+                <div class="result">
+                    <h1 class="result-title"><a class="page-link site-blue" data-value="Home">Home</a></h1>
+                    <p class="result-content">
+                        Welcome to my <strong>portfolio</strong>. It is Google inspired...
+                    </p>
+                </div>
+                <div class="result">
+                    <h1 class="result-title"><a class="page-link site-blue" data-value="Projects">Projects</a></h1>
+                    <p class="result-content">
+                        Get to see some of the interesting projects I have been working on...
+                    </p>
+                </div>
+
+                <div class="result">
+                    <h1 class="result-title"><a class="page-link site-blue" data-value="Images">Images</a></h1>
+                    <p class="result-content">
+                        Get to see some of the beautiful images I have posted recently...
+                    </p>
+                </div>
+
+                <div class="result">
+                    <h1 class="result-title"><a class="page-link site-blue" data-value="Blogs">Blogs</a></h1>
+                    <p class="result-content">
+                        Stay tuned to check my blogs. I will posting soon ...
+                    </p>
+                </div>
+
+                <div class="result">
+                    <h1 class="result-title"><a class="page-link site-blue" data-value="About">About Me</a></h1>
+                    <p class="result-content">
+                        Oliver Njuguna is a student at the Murang'a University of Technology...
+                    </p>
+                    <span><a href="" class="result-link">More about Oliver</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="result askmore-section">
+            <h1 class="result-title result-title__black">People also ask</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            How old is Oliver Njuguna ?
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            His age is currently kept a secret but it will made public soon. Or what some people would
+                            say is "If God wills"
+                        </p>
+                        <small class="accordion-item__qanda-info site-blue">Info by Oliver <span class="beauty-grey"> >
+                                3/23/2021 > on his portfolio</span></small>
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            How did you come up with the idea of the portfolio ?
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            The idea came after my web development lecturer asked us to be creative in our portfolio.
+                        </p>
+                        <small class="accordion-item__qanda-info site-blue">Info by Oliver <span class="beauty-grey"> >
+                                3/23/2021 > on his portfolio</span></small>
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            Is Oliver currently dating ?
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            😆 Very Good question.. Well yes, He is dating but he'd like it to keep it a secret for.
+                            Under water if you know what I mean
+                        </p>
+                        <small class="accordion-item__qanda-info site-blue">Info by Oliver <span class="beauty-grey"> >
+                                3/23/2021 > on his portfolio</span></small>
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            What are Oliver's hobbies
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            I enjoy swimming and reading books, however I'm still searching for more.
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="result projects-section">
+            <div class="result-title askmore-title">
+                <div class="section-title__result">
+                    <ion-icon name="logo-apple-ar"></ion-icon>
+                    <span>Projects</span>
+                </div>
+            </div>
+            <div class="project-collection">
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/gitHub-" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/1_8HHpgXJkc6jQSiNT42EiBg.png" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">GitHub Search</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">Technologies: <span class="technologies-items">Javascript, HTML5
+                                    ,CSS3, TypeScript, Angular</span></span>
+                            <span class="date">Jul 15, 2019 </span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/CeaserCypher" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/Caesar_cipher_left_shift_of_3.svg" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">Ceaser Cipher</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">Technologies: <span class="technologies-items">Java</span></span>
+                            <span class="date">Jul 22, 2019 </span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/pubsubcalc" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/Screenshot (119).png" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">Calculator</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">
+                                Technologies: <span class="technologies-items">Javascript, HTML5 ,CSS3</span></span>
+                            <span class="date">3rd March 2021</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="seemore">
+                    <a class="page-link" data-value="Projects">
+                        <button type="button" class="button-pill">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            <span class="button-pill__text">See more</span>
+                            <span></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="result related-searches">
+            <h1 class="result-title result-title__black">Related Searches</h1>
+            <div class="related-searches__items">
+                <a class="related-searches__link page-link" data-value="About">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's about</span>
+                </a>
+                <a class="related-searches__link page-link" data-value="Projects">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's amazing projects😁</span>
+                </a>
+                <a class="related-searches__link page-link" data-value="Images">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's images</span>
+                </a>
+                <a class="related-searches__link page-link" data-value="Blogs">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's blog</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- projects -->
+<template id="projectsPage">
+    <div id="content">
+        <div class="result-time">
+            <span class="beauty-grey">About 3 results (few seconds)</span>
+        </div>
+        <div class="result projects-section">
+            <div class="project-collection">
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/gitHub-" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/1_8HHpgXJkc6jQSiNT42EiBg.png" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">GitHub Search</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">Technologies: <span class="technologies-items">Javascript, HTML5
+                                    ,CSS3, TypeScript, Angular</span></span>
+                            <span class="date">Jul 15, 2019 </span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/CeaserCypher" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/Caesar_cipher_left_shift_of_3.svg" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">Ceaser Cipher</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">Technologies: <span class="technologies-items">Java</span></span>
+                            <span class="date">Jul 22, 2019 </span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/pubsubcalc" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/Screenshot (119).png" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">Calculator</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">
+                                Technologies: <span class="technologies-items">Javascript, HTML5 ,CSS3</span></span>
+                            <span class="date">3rd March 2021</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- images -->
+<template id="imagesPage">
+    <div id="content">
+        <div class="result images-section">
+            <div class="images-collection">
+                <div class="images-collection__item" target="_blank">
+                    <div class="images-collection__item-image">
+                        <img src="./assets/images/1_8HHpgXJkc6jQSiNT42EiBg.png" alt="" />
+                    </div>
+                    <div class="images-collection__info">
+                        <div class="images-collection__info-main">GitHub Search</div>
+                        <div class="images-collection__info-link">
+                            <a href="https://github.com/ollaymkenya/gitHub-">github.com/ollaymkenya/gitHub-</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-collection__item" target="_blank">
+                    <div class="images-collection__item-image">
+                        <img src="./assets/images/Caesar_cipher_left_shift_of_3.svg" alt="" />
+                    </div>
+                    <div class="images-collection__info">
+                        <div class="images-collection__info-main">Ceaser Cipher</div>
+                        <div class="images-collection__info-link">
+                            <a
+                                href="https://github.com/ollaymkenya/CeaserCypher">github.com/ollaymkenya/CeaserCypher</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-collection__item" target="_blank">
+                    <div class="images-collection__item-image">
+                        <img src="./assets/images/Screenshot (119).png" alt="" />
+                    </div>
+                    <div class="images-collection__info">
+                        <div class="images-collection__info-main">Calculator</div>
+                        <div class="images-collection__info-link">
+                            <a href="https://github.com/ollaymkenya/pubsubcalc">github.com/ollaymkenya/pubsubcalc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- blogs -->
+<template id="blogsPage">
+    <div id="content">
+        <div class="blogs-page">
+            <span>
+                <ion-icon name="footsteps"></ion-icon>
+            </span>
+            <p>No blogs currently, we'll add soon</p>
+        </div>
+    </div>
+</template>
+
+<!-- about -->
+<template id="aboutPage">
+    <div id="content">
+        <div class="result-time">
+            <span class="beauty-grey">About 20 results (few seconds)</span>
+        </div>
+        <div class="result">
+            <span class="result-site">www.mywork.com</span>
+            <h1 class="result-title">Oiver Njuguna - Olipedia</h1>
+            <p class="result-content">
+                Oliver Njuguna is a student at the Murang'a University of Technology. He persues Software
+                Engineering and is currently in his third year. He has successfully completed severa;l projects and
+                this is actually one of them. He loves swimming and reading books.
+            </p>
+            <div class="result-statistics">
+                <div class="result-statistics__item">
+                    <span class="title"><strong>Education: </strong></span>
+                    <span class="content">Murang'a university of technology</span>
+                </div>
+                <div class="result-statistics__item">
+                    <span class="title"><strong>Net Worth: </strong></span>
+                    <span class="content">Not known</span>
+                </div>
+                <div class="result-statistics__item">
+                    <span class="title"><strong>Citizenship: </strong></span>
+                    <span class="content">Kenya</span>
+                </div>
+                <div class="result-statistics__item">
+                    <span class="title"><strong>Career: </strong></span>
+                    <span class="content">Student</span>
+                </div>
+            </div>
+        </div>
+        <div class="result askmore-section">
+            <h1 class="result-title result-title__black">People also ask</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            How old is Oliver Njuguna ?
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            His age is currently kept a secret but it will made public soon. Or what some people would
+                            say is "If God wills"
+                        </p>
+                        <small class="accordion-item__qanda-info site-blue">Info by Oliver <span class="beauty-grey"> >
+                                3/23/2021 > on his portfolio</span></small>
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            How did you come up with the idea of the portfolio ?
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            The idea came after my web development lecturer asked us to be creative in our portfolio.
+                        </p>
+                        <small class="accordion-item__qanda-info site-blue">Info by Oliver <span class="beauty-grey"> >
+                                3/23/2021 > on his portfolio</span></small>
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            Is Oliver currently dating ?
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            😆 Very Good question.. Well yes, He is dating but he'd like it to keep it a secret for.
+                            Under water if you know what I mean
+                        </p>
+                        <small class="accordion-item__qanda-info site-blue">Info by Oliver <span class="beauty-grey"> >
+                                3/23/2021 > on his portfolio</span></small>
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__qanda">
+                        <p class="accordion-item__qanda-question">
+                            What are Oliver's hobbies
+                        </p>
+                        <p class="accordion-item__qanda-answer">
+                            I enjoy swimming and reading books, however I'm still searching for more.
+                    </div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="result projects-section">
+            <div class="result-title askmore-title">
+                <div class="section-title__result">
+                    <ion-icon name="logo-apple-ar"></ion-icon>
+                    <span>Projects</span>
+                </div>
+            </div>
+            <div class="project-collection">
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/gitHub-" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/1_8HHpgXJkc6jQSiNT42EiBg.png" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">GitHub Search</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">Technologies: <span class="technologies-items">Javascript, HTML5
+                                    ,CSS3, TypeScript, Angular</span></span>
+                            <span class="date">Jul 15, 2019 </span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/CeaserCypher" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/Caesar_cipher_left_shift_of_3.svg" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">Ceaser Cipher</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">Technologies: <span class="technologies-items">Java</span></span>
+                            <span class="date">Jul 22, 2019 </span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-collection__item" href="https://github.com/ollaymkenya/pubsubcalc" target="_blank">
+                    <div class="project-collection__item-image">
+                        <img src="./assets/images/Screenshot (119).png" alt="" />
+                    </div>
+                    <div class="project-collection__info">
+                        <div class="project-collection__info-main">Calculator</div>
+                        <div class="project-collection__info-sub">
+                            <span class="technologies">
+                                Technologies: <span class="technologies-items">Javascript, HTML5 ,CSS3</span></span>
+                            <span class="date">3rd March 2021</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="seemore">
+                    <a class="page-link" data-value="Projects">
+                        <button type="button" class="button-pill">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            <span class="button-pill__text">See more</span>
+                            <span></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="result related-searches">
+            <h1 class="result-title result-title__black">Related Searches</h1>
+            <div class="related-searches__items">
+                <a class="related-searches__link page-link" data-value="About">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's about</span>
+                </a>
+                <a class="related-searches__link page-link" data-value="Projects">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's amazing projects😁</span>
+                </a>
+                <a class="related-searches__link page-link" data-value="Images">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's images</span>
+                </a>
+                <a class="related-searches__link page-link" data-value="Blogs">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Oliver's blog</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
+<!-- -------------------------------------------------------------------------components--------------------------------------------------------------------- -->
+
+<!-- topnav -->
+<template class="top-nav" id="top-nav">
+    <div class="logo"><img src="./assets/logo.svg" alt="logo" srcset="" /></div>
+    <div class="searchbar">
+        <input type="text" name="" id="" />
+        <div class="searchbar-icon">
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="extras">
+        <div class="extras-icon">
+            <ion-icon name="apps"></ion-icon>
+            <a href="https://github.com/ollaymkenya"><img src="./assets/icon/avatar-icon.png" alt="" srcset="" /></a>
+        </div>
+    </div>
+</template>
+
+<!-- bottomnav -->
+<template class="bottom-nav" id="bottom-nav">
+    <div class=""></div>
+    <div class="menu">
+        <nav>
+            <div class="menu-pages">
+                <a class="menu-item active" href="" data-value="Home">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>All</span>
+                </a>
+                <a class="menu-item" href="" data-value="Images">
+                    <svg focusable="false" viewBox="0 0 24 24" width="12px" fill="#5F6368">
+                        <path
+                            d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5">
+                        </path>
+                    </svg>
+                    <span>Images</span>
+                </a>
+                <a class="menu-item" href="" data-value="Blogs">
+                    <svg class="DCxYpf" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z">
+                        </path>
+                    </svg>
+                    <span>Blogs</span>
+                </a>
+                <a class="menu-item" href="" data-value="Projects">
+                    <ion-icon name="logo-apple-ar"></ion-icon>
+                    <span>Projects</span>
+                </a>
+                <a class="menu-item" href="" data-value="About">
+                    <ion-icon name="happy-outline"></ion-icon>
+                    <span>About</span>
+                </a>
+            </div>
+            <div class="menu-tools">
+                <a class="menu-tool">
+                    <span>Settings</span>
+                </a>
+                <a class="menu-tool">
+                    <span>Tools</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class=""></div>
+</template>
+
+<!-- aboutSummary -->
+<template class="footer" id="page-footer">
+    <div class="footer-a">
+        <div class="empty"></div>
+        <div class="not-empty">
+            <span class="right-border">Kenya </span>
+            <span>
+                <ion-icon name="ellipse" style="color: var(--beautyGrey);"></ion-icon>
+                <strong style="color: black;"> Murang'a</strong> - Based on the portfolio's owner location
+            </span>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div class="footer-b">
+        <div class="empty"></div>
+        <div class="not-empty">
+            <div class="menu-tools">
+                <span class="menu-tool">Help</span>
+                <span class="menu-tool">Send Feedback</span>
+                <span class="menu-tool">Privacy</span>
+                <span class="menu-tool">Terms</span>
+            </div>
+        </div>
+        <div class="empty"></div>
+    </div>
+</template>
+
+<!-- imageContentSummary -->
+<template class="image-content__summary" id="image-content__summary">
+    <div class="clickedImage">
+        <img src="" alt="">
+        <div class="name"></div>
+        <span class="clickedImage-info">Image may be subjected to copyright</span>
+    </div>
+    <div class="otherImages-container">
+        <h3 class="clicked-images__title" style="color: aliceblue;">Related Images</h3>
+        <div class="otherImages">
+            <div class="clickedImage">
+            </div>
+            <div class="clickedImage">
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- homeSummarySummary -->
+<template id="homeSummary">
+    <div id="content">
+        <div class="aboutSummary">
+            <div class="aboutSummary-image">
+                <div class="image-background image-background1"></div>
+                <div class="image-background image-background2"></div>
+                <div class="image-background image-background3"></div>
+            </div>
+            <div class="aboutSummary-introduction">
+                <h1>Oliver Njuguna</h1>
+                <p>Uniersity Student</p>
+            </div>
+            <div class="aboutSummary-content">
+                <p>
+                    Oliver Njuguna is a student at the Murang'a University of Technology. He persues Software
+                    Engineering and is currently in his third year. He has successfully completed severa;l projects and
+                    this is actually one of them. He loves swimming and reading books.<br>
+                    <a class="page-link" data-value="About"><span class="site-blue" style="pointer-events: none;">Learn
+                            more</span> </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- aboutSummary -->
+<template id="aboutSummary">
+    <div id="content">
+        <div class="aboutSummary">
+            <div class="aboutSummary-image">
+                <div class="image-background image-background1"></div>
+                <div class="image-background image-background2"></div>
+                <div class="image-background image-background3"></div>
+            </div>
+            <div class="aboutSummary-introduction">
+                <h1>Oliver Njuguna</h1>
+                <p>Uniersity Student</p>
+            </div>
+            <div class="aboutSummary-content">
+                <p>
+                    Oliver Njuguna is a student at the Murang'a University of Technology. He persues Software
+                    Engineering and is currently in his third year. He has successfully completed severa;l projects and
+                    this is actually one of them. He loves swimming and reading books. <br> <span
+                        class="site-blue">Olipedia</span>
+                </p>
+            </div>
+            <div class="aboutSummary-info">
+                <div class="aboutSummary-info__item">
+                    <span class="category"><strong>Born: </strong></span><span class="category-content">Nyandarua,
+                        Kenya</span>
+                </div>
+                <div class="aboutSummary-info__item">
+                    <span class="category"><strong>Height: </strong></span><span class="category-content">1.68m</span>
+                </div>
+                <div class="aboutSummary-info__item">
+                    <span class="category"><strong>Education: </strong></span><span class="category-content">Murang'a
+                        University of Technology</span>
+                </div>
+                <div class="aboutSummary-info__item">
+                    <span class="category"><strong>Hobbies: </strong></span><span class="category-content">Reading
+                        books, Swimmiing</span>
+                </div>
+            </div>
+            <div class="aboutSummary-projects">
+                <h3 class="aboutSummary-projects__title">Projects</h3>
+                <div class="aboutSummary-projects__items">
+                    <div class="aboutSummary-projects__items-item">
+                        <img src="./assets/images/1_8HHpgXJkc6jQSiNT42EiBg.png" alt=""
+                            class="aboutSummary-projects__items-image">
+                        <span class="aboutSummary-projects__items-link"><a
+                                href="https://github.com/ollaymkenya/gitHub-">Github Search</a></span>
+                        <span class="aboutSummary-projects__items-year">2019</span>
+                    </div>
+                    <div class="aboutSummary-projects__items-item">
+                        <img src="./assets/images/Caesar_cipher_left_shift_of_3.svg" alt=""
+                            class="aboutSummary-projects__items-image">
+                        <span class="aboutSummary-projects__items-link"><a
+                                href="https://github.com/ollaymkenya/CeaserCypher">Ceaser Cypher</a></span>
+                        <span class="aboutSummary-projects__items-year">2019</span>
+                    </div>
+                    <div class="aboutSummary-projects__items-item">
+                        <img src="./assets/images/Screenshot (119).png" alt=""
+                            class="aboutSummary-projects__items-image">
+                        <span class="aboutSummary-projects__items-link"><a
+                                href="https://github.com/ollaymkenya/pubsubcalc">Calculator</a></span>
+                        <span class="aboutSummary-projects__items-year">2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+<script src="./index.js" type="module"></script>
+
+</html>

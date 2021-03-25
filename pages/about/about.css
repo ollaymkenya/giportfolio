@@ -1,0 +1,118 @@
+.result-statistics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--siteGrey);
+}
+
+.result-statistics__item{
+    margin: .25rem .5rem 0 0;
+}
+
+.aboutSummary{
+    border: var(--mediumBorder);
+    border-radius: 5px;
+    font-family: var(--secondaryFont);
+}
+
+.aboutSummary-image{
+    display: flex;
+}
+
+.image-background1,
+.image-background2,
+.image-background3{
+    height: 100px;
+    flex: 0 0 calc(33.33%);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.image-background1{
+    background: url("../../assets/images/1_8HHpgXJkc6jQSiNT42EiBg.png");
+}
+
+.image-background2{
+    background: url("../../assets/images/Caesar_cipher_left_shift_of_3.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image-background3{
+    background: url("../../assets/images/Screenshot\ \(119\).png");
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutSummary-introduction{
+    padding: 10px;
+    border-bottom: var(--smallBorder);
+}
+
+.aboutSummary-introduction h1 {
+    color: var(--siteBlack);
+    font-weight: var(--normalFontweight);
+    line-height: var(--largeLineHeight);
+    margin-bottom: .25rem;
+    margin-bottom: 5px;
+}
+
+.aboutSummary-introduction p {
+    color: var(--beautyGrey);
+    font-size: var(--verySmallFontSize);
+}
+
+.aboutSummary-content{
+    padding: 10px;
+    font-size: var(--verySmallFontSize);
+    color: var(--siteGrey);
+    line-height: var(--verySmallLineHeight);
+}
+
+.aboutSummary-info{
+    padding: 10px;
+    font-size: var(--verySmallFontSize);
+    color: var(--siteBlack);
+    line-height: var(--verySmallLineHeight);
+}
+
+.aboutSummary-info__item{
+    padding: 5px 0;
+}
+
+.aboutSummary-projects{
+    padding: 10px;
+}
+
+.aboutSummary-projects__title{
+    font-weight: var(--normalFontweight);
+}
+
+.aboutSummary-projects__items{
+    display: flex;
+    flex: 0 0 calc(20%);
+    margin: 1rem 0;
+}
+
+.aboutSummary-projects__items-item,
+.aboutSummary-projects__items-item img{
+    width: 100%;
+}
+
+.aboutSummary-projects__items-item span{
+    display: block;
+}
+
+.aboutSummary-projects__items-item img{
+    height: 50px;
+}
+
+.aboutSummary-projects__items-item span:last-child{
+    font-size: var(--veryverySmallFontSize);
+    color: var(--beautyGrey);
+}
+
+.aboutSummary-projects__items-item a{
+    display: block;
+    color: var(--siteBlue);
+}
