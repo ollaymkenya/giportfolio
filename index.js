@@ -6,9 +6,9 @@ import Blogs from "./pages/blogs/blogs.js";
 import About from "./pages/about/about.js";
 
 //components
-import BottomNav from "../../components/bottomnav/bottomnav.js";
-import TopNav from "../../components/topnav/topnav.js";
-import Footer from "../../components/footer/footer.js";
+import BottomNav from "./components/bottomnav/bottomnav.js";
+import TopNav from "./components/topnav/topnav.js";
+import Footer from "./components/footer/footer.js";
 
 // pages selectors
 const page = document.querySelector("#page");
