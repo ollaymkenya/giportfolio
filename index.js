@@ -1,14 +1,14 @@
 // pages
-import Home from "https://ollaymkenya.github.io/pages/home/home.js";
-import Projects from "https://ollaymkenya.github.io/pages/projects/projects.js";
-import Images from "https://ollaymkenya.github.io/pages/images/images.js";
-import Blogs from "https://ollaymkenya.github.io/pages/blogs/blogs.js";
-import About from "https://ollaymkenya.github.io/pages/about/about.js";
+import Home from "./pages/home/home.js";
+import Projects from "./pages/projects/projects.js";
+import Images from "./pages/images/images.js";
+import Blogs from "./pages/blogs/blogs.js";
+import About from "./pages/about/about.js";
 
 //components
-import BottomNav from "https://ollaymkenya.github.io/components/bottomnav/bottomnav.js";
-import TopNav from "https://ollaymkenya.github.io/components/topnav/topnav.js";
-import Footer from "https://ollaymkenya.github.io/components/footer/footer.js";
+import BottomNav from "../../components/bottomnav/bottomnav.js";
+import TopNav from "../../components/topnav/topnav.js";
+import Footer from "../../components/footer/footer.js";
 
 // pages selectors
 const page = document.querySelector("#page");
